@@ -35,8 +35,12 @@ public class RestaurantService {
     }
     
     public long totalOrderValue(String restaurantName,List<Item> listOfItemsSelected) {
-		
-    	return 0;
+		long sum = 0;
+    	for(Item i:listOfItemsSelected) {
+			sum=sum+i.getPrice();
+		 }
+    	
+    	return sum;
     	
     }
     
