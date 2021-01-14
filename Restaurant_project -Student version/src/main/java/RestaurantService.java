@@ -4,6 +4,8 @@ import java.util.List;
 
 public class RestaurantService {
     private static List<Restaurant> restaurants = new ArrayList<>();
+    
+    private static List<Item> selectedItems = new ArrayList<>();
 
     public Restaurant findRestaurantByName(String restaurantName) throws restaurantNotFoundException{
     	
@@ -31,4 +33,13 @@ public class RestaurantService {
     public List<Restaurant> getRestaurants() {
         return restaurants;
     }
+    
+    public long totalOrderValue(String restaurantName,List<Item> listOfItemsSelected) {
+		
+    	return 0;
+    	
+    }
+    
+    
+    
 }
